@@ -19,6 +19,7 @@
 }
 .qrcode{
     flex: 1;
+    padding: 20px;
 }
 .qrcode>img{
     display: block;
@@ -87,7 +88,7 @@ input, textarea{
             <p>{{ coupon.description }}</p>
             <span class="exp">expired: {{ expDate }}</span>
             <div class="qrcode">
-                <img src="http://via.placeholder.com/350x350?text=QCCODE">
+                <img src="../assets/img/qrcode.png">
             </div>
         </div>
         <div v-if="newCoupon">

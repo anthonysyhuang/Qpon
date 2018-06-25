@@ -113,7 +113,7 @@ export default {
                     if(err.response.data.code == 111) return Promise.reject(ErrorCode.STORE_EXISTED);
                     return Promise.reject(ErrorCode.UNKNOW_ERROR);
                 })
-                console.log(ret.data);
+                console.log(res.data);
             }
 
             commit(types.UPDATE_STORE, res.data);

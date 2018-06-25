@@ -31,7 +31,7 @@
     position: absolute;
     content: '';
     border: 10px solid transparent;
-    border-top: 10px solid #B1A1A2;
+    border-top: 10px solid #3D5652;
     bottom: -20px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -40,7 +40,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #B1A1A2;
+    background-color: #3D5652;
     width: 100%;
     overflow: hidden;
 }
@@ -49,7 +49,7 @@
     color: white;
     display: block;
     text-align: left;
-    width: max-content;
+    width: 100%;
     padding: 3px 5px 3px 5px ;
 }
 .add-pin{
@@ -260,7 +260,7 @@ Marker.prototype.onRemove= function(){}
 Marker.prototype.onAdd= function(){
     this.div = document.createElement('DIV');
     this.div.className = "marker";
-    this.div.innerHTML = '<div class="marker-content"><span>'+ this.store.name +'</span><span>'+'buy1 get one free'+'</span></div>';
+    this.div.innerHTML = '<div class="marker-content"><span>'+ this.store.name +'</span><span>'+this.store.coupons[0].title +'</span></div>';
     this.div.style.position = 'absolute';
 
     let callback = this.onClick;

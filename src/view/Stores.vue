@@ -189,6 +189,13 @@ export default {
 
             if(this.mode.viewMode) {
                 this.toggleMode();
+                this.newStore = {
+                    name: '',
+                    description: '',
+                    imgData: '',
+                    imgFile: '',
+                    location: ''
+                }
                 return
             }
 
@@ -209,7 +216,7 @@ export default {
             }).then(() => {
                 this.toggleMode();
             }).catch(err => {
-                
+                console.log(err);
             })
         },
         onImageSelected: function(e){
@@ -230,8 +237,6 @@ export default {
                 return;
             }
 
-            // ;
-
             this.$store.dispatch('logout');
             this.$router.push({name: 'login'})
         },
@@ -244,9 +249,6 @@ export default {
             let mode = this.mode.createMode;
             this.mode.createMode = this.mode.viewMode;
             this.mode.viewMode = mode;
-        },
-        setError: function(err){
-            
         }
     },
     watch: {

@@ -33,7 +33,7 @@ li>i{
     font-size: 30px;
 }
 .active{
-    color: #8E4234;
+    color: #78a79f;
 }
 </style>
 

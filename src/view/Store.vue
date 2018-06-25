@@ -91,7 +91,7 @@
     margin: auto;
 }
 .add{
-    background-color: #ff8888;
+    background-color: #3e5651;
     color: white;
     border: none;
     padding: 10px 10px;
