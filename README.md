@@ -1,6 +1,20 @@
-# tracker
+# Qpon
 
-> Project for WNM617
+Qpon is a mobile web application helps users find coupons near them.  As a store owner, you can create your store and generate coupons. As a consumer, you can view coupons around you, and show them to the store to use it. 
+
+
+## Skill Used
+* vue.js
+* webpack
+* node.js
+* google map api
+* express
+* RESTful
+* mongoDB
+
+## Screenshot
+<img src=screenshot/6.png width="250"/><img src=screenshot/1.png width="250"/><img src=screenshot/4.png width="250"/><img src=screenshot/3.png width="250"/><img src=screenshot/2.png width="250"/><img src=screenshot/5.png width="250"/>
+
 
 ## Build Setup
 
@@ -17,5 +31,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
