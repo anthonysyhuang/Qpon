@@ -1,0 +1,305 @@
+{
+    "users": [
+      {
+        "id": 0,
+        "name": "Anthony Huang",
+        "username": "user0",
+        "password": "12345",
+        "age": 27,
+        "gender": 0,
+        "email": "huang.anthony.sy@gmail.com",
+        "quote": "Forever Young",
+        "profile_img": "user0.jpg",
+        "like": [
+          3,
+          1,
+          0
+        ],
+        "been": [
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Tillman Barlow",
+        "username": "user1",
+        "password": "12345",
+        "age": 20,
+        "gender": 1,
+        "email": "user1@gmail.com",
+        "quote": "veniam voluptate est aliqua incididunt quis non ad consectetur aute duis",
+        "profile_img": "user_default.jpg",
+        "like": [
+          2,
+          1,
+          0,
+          4
+        ],
+        "been": [
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Alyce Quinn",
+        "username": "user2",
+        "password": "12345",
+        "age": 39,
+        "gender": 0,
+        "email": "user2@gmail.com",
+        "quote": "excepteur minim consequat elit amet commodo laborum minim",
+        "profile_img": "user_default.jpg",
+        "like": [
+          2,
+          4,
+          0
+        ],
+        "been": [
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Chase Stephenson",
+        "username": "user3",
+        "password": "12345",
+        "age": 32,
+        "gender": 1,
+        "email": "user3@gmail.com",
+        "quote": "veniam cupidatat laboris in sunt pariatur",
+        "profile_img": "user_default.jpg",
+        "like": [
+          4,
+          0
+        ],
+        "been": [
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Kathy Conrad",
+        "username": "user4",
+        "password": "12345",
+        "age": 46,
+        "gender": 1,
+        "email": "user4@gmail.com",
+        "quote": "in veniam exercitation officia",
+        "profile_img": "user_default.jpg",
+        "like": [
+          1,
+          0,
+          4
+        ],
+        "been": [
+        ]
+      }
+    ],
+    "spots": [
+      {
+        "id": 0,
+        "title": "Mount Sanqing",
+        "lat": 28.910268,
+        "lng": 118.067682,
+        "locationNum": 21,
+        "imgs": [
+          {
+            "id": 0,
+            "path": "static/img/0_0.jpg",
+            "tags": [
+              {
+                "id": 0,
+                "tagText": "abovecloud",
+                "tagNum": 2
+              },
+              {
+                "id": 1,
+                "tagText": "socold",
+                "tagNum": 3
+              },
+              {
+                "id": 2,
+                "tagText": "mountain",
+                "tagNum": 7
+              },
+              {
+                "id": 3,
+                "tagText": "exhausted",
+                "tagNum": 3
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "path": "static/img/0_1.jpg",
+            "tags": [
+              {
+                "id": 0,
+                "tagText": "stairs",
+                "tagNum": 4
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "path": "static/img/0_2.jpg",
+            "tags": []
+          },
+          {
+            "id": 3,
+            "path": "static/img/0_3.jpg",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Waitan, Shanghai",
+        "lat": 31.2402611,
+        "lng": 121.490577,
+        "locationNum": 26,
+        "imgs": [
+          {
+            "id": 0,
+            "path": "static/img/1_0.jpg",
+            "tags": [
+              {
+                "id": 0,
+                "tagText": "est",
+                "tagNum": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Disneyland, Los Angeles",
+        "lat": 33.8102287,
+        "lng": -117.9194194,
+        "locationNum": 14,
+        "imgs": [
+          {
+            "id": 0,
+            "path": "static/img/2_0.jpg",
+            "tags": [
+              {
+                "id": 0,
+                "tagText": "disneyland",
+                "tagNum": 10
+              },
+              {
+                "id": 1,
+                "tagText": "moviestar",
+                "tagNum": 8
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "path": "static/img/2_1.jpg",
+            "tags": [
+              {
+                "id": 0,
+                "tagText": "Baymax",
+                "tagNum": 6
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "path": "static/img/2_2.jpg",
+            "tags": []
+          },
+          {
+            "id": 3,
+            "path": "static/img/2_3.jpg",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Lake Tahoe",
+        "lat": 39.0968493,
+        "lng": -120.0323507,
+        "locationNum": 12,
+        "imgs": [
+          {
+            "id": 0,
+            "path": "static/img/3_0.jpg",
+            "tags": [
+              {
+                "id": 0,
+                "tagText": "view",
+                "tagNum": 7
+              },
+              {
+                "id": 1,
+                "tagText": "chill",
+                "tagNum": 4
+              },
+              {
+                "id": 2,
+                "tagText": "lake",
+                "tagNum": 2
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "path": "static/img/3_1.jpg",
+            "tags": [
+              {
+                "id": 0,
+                "tagText": "kayak",
+                "tagNum": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Downtown AMC, SF",
+        "lat": 37.78414542,
+        "lng": -122.40298283,
+        "locationNum": 23,
+        "imgs": [
+          {
+            "id": 0,
+            "path": "static/img/4_0.jpg",
+            "tags": [
+              {
+                "id": 0,
+                "tagText": "goodday",
+                "tagNum": 5
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "path": "static/img/4_1.jpg",
+            "tags": [
+              {
+                "id": 0,
+                "tagText": "building",
+                "tagNum": 3
+              },
+              {
+                "id": 1,
+                "tagText": "city",
+                "tagNum": 9
+              },
+              {
+                "id": 2,
+                "tagText": "buildingforest",
+                "tagNum": 5
+              },
+              {
+                "id": 3,
+                "tagText": "San Francisco",
+                "tagNum": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
