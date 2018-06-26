@@ -120,6 +120,7 @@
                :hasLeftBtn="headerData.hasLeftBtn" :leftBtnText="headerData.leftBtnText"
                @onRightBtnClick="onRgBtnClick()" @onLeftBtnClick="onLfBtnClick()"></HeaderNav>
     <section class="main">
+        <ErrorDialog :errorText="errorText" @resetError="()=>{ this.errorText = ''; }"/>
         <div class="top-half">
             <div class="profile_image_box">
                 <img :src='ProfileImg'>
@@ -178,12 +179,15 @@ import BottomNav from '@/components/BottomNav.vue'
 import HeaderNav from '@/components/HeaderNav.vue'
 import utilities from '@/utilities/utilities.js'
 import * as types from '@/store/mutation_types.js'
+import ErrorDialog from '@/components/ErrorDialog'
+
 
 export default {
   name: 'Profile',
   components: {
       'BottomNav': BottomNav,
-      'HeaderNav': HeaderNav
+      'HeaderNav': HeaderNav,
+      'ErrorDialog': ErrorDialog
   },
   data(){
       return {
@@ -197,7 +201,8 @@ export default {
           },
           user: {},
           userUnSave: Object.assign({}, this.$store.state.user),
-          editMood: false
+          editMood: false,
+          errorText: ''
       }
   },
   mounted: function(){
@@ -218,9 +223,9 @@ export default {
     onRgBtnClick: function(){
         if(this.editMood){
             //Done
-            this.editMood = false;
-            this.headerData.rightBtnText = 'Edit';
-            this.headerData.hasLeftBtn = false;
+            // this.editMood = false;
+            // this.headerData.rightBtnText = 'Edit';
+            // this.headerData.hasLeftBtn = false;
 
             //save to db
             this.$store.dispatch('updateUser', {
@@ -231,6 +236,9 @@ export default {
                 this.editMood = false;
                 this.headerData.rightBtnText = 'Edit';
                 this.headerData.hasLeftBtn = false;
+            })
+            .catch((err) => {
+                this.errorText = err.text;
             })
 
         }

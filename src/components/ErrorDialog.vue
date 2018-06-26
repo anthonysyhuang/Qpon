@@ -1,6 +1,7 @@
 <style scoped>
 .error{
     position: relative;
+    z-index: 999;
 }
 .error-box{
     text-align: center;
@@ -10,7 +11,6 @@
     transition: 0.3s ease;
     position: absolute;
     left: 50%;
-    width: auto;
     top: 20px;
     -webkit-transform: translate(-50%,-5px);
     transform: translate(-50%,-5px);
@@ -22,6 +22,7 @@
     align-items: center;
     border-radius: 10px;
     font-weight: bold;
+    width: max-content;
 }
 .error-box-show{
     height: 20px;

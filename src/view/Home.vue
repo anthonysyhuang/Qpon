@@ -170,21 +170,21 @@ export default {
         console.log(google);
         let vue = this;
         
-        
-        this.getCurrentLocation((pos) => {
-            // vue.map.setCenter(pos)
-            vue.map = new google.maps.Map(this.$refs.map, {
-                center: {
-                    lat: pos.lat,
-                    lng: pos.lng
-                },
-                zoom: 14,
-                mapTypeControl: false,
-                streetViewControl: false,
-                clickableIcons: false,
-            });
-            this.getNearbyStores();
+        vue.map = new google.maps.Map(this.$refs.map, {
+            center: {
+                lat: 37.489318,
+                lng: -122.241891
+            },
+            zoom: 14,
+            mapTypeControl: false,
+            streetViewControl: false,
+            clickableIcons: false,
         });
+        this.getNearbyStores();
+        // this.getCurrentLocation((pos) => {
+        //     // vue.map.setCenter(pos)
+            
+        // });
         let timmer = null;
 
   },

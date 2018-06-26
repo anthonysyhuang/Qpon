@@ -102,6 +102,12 @@ export default {
                 const img = await imageUploader.post('store/upload.php', data)
                 .catch(err => {
                     console.log(err.response);
+                    xhr.delete(`/me/stores/${res.data.store._id}`);
+                    if(err.response.data.code == 96){
+                        //file too big error
+                        return Promise.reject(ErrorCode.FILE_TOO_LARGE)
+                    }
+                    return Promise.reject(ErrorCode.UPLOAD_IMAGE_FAIL)
                 })
                 console.log(img.data);
 

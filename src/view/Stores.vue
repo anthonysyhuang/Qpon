@@ -217,6 +217,7 @@ export default {
                 this.toggleMode();
             }).catch(err => {
                 console.log(err);
+                this.errorText = err.text;
             })
         },
         onImageSelected: function(e){

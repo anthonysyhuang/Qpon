@@ -153,7 +153,7 @@
         <div v-show="mapMode" class="map-section" >
             <div class="map" ref="map"></div>
             <div class="map-controls">
-                <button class="center-btn" @click="centerMap()">Center</button>
+                <!-- <button class="center-btn" @click="centerMap()">Center</button> -->
                 <button v-if="isOwner" class="undo-btn" @click="undo()">Undo</button>
             </div>
         </div>
@@ -223,17 +223,17 @@ export default {
 
         this.map = new google.maps.Map(this.$refs.map, {
             center: {
-                lat: 37.773972,
-                lng: -122.431297
+                lat: 37.540072,
+                lng: -122.397914
             },
-            zoom: 14,
+            zoom: 10,
             mapTypeControl: false,
             streetViewControl: false,
             clickableIcons: false,
         });
-        this.getCurrentLocation((pos) => {
-            vue.map.setCenter(pos)
-        });
+        // this.getCurrentLocation((pos) => {
+        //     vue.map.setCenter(pos)
+        // });
         
         this.store.locations.forEach(location => {
             let marker = new google.maps.Marker({
@@ -250,9 +250,7 @@ export default {
             const location = e.latLng;
 
             timmer = setTimeout(function() {
-                // if(vue.marker) vue.marker.setMap(null);
-
-                if(!this.isOwner) return;
+                if(!vue.isOwner) return;
 
                 const marker = new google.maps.Marker({
                     position: location,

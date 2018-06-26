@@ -102,6 +102,10 @@ export default {
                 const img = await imageUploader.post('profile/upload.php', data)
                 .catch(err => {
                     console.log(err.response);
+                    if(err.response.data.code == 96)
+                        return Promise.reject(ErrorCode.FILE_TOO_LARGE);
+
+                    return Promise.reject(ErrorCode.UPLOAD_IMAGE_FAIL);
                 })
                 console.log(img.data);
                 fileUrl = img.data.uri;

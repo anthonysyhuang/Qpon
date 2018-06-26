@@ -59,7 +59,7 @@ export default {
   data(){
       return {
           headerData:{
-              title: 'Lists',
+              title: 'Stores',
               titleAlign: HeaderNav.CONFIG.CENTER,
               hasRight: false,
               rightBtnText: 'Add'
